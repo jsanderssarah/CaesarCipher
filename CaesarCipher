@@ -1,9 +1,6 @@
 import edu.duke.*;
 import edu.duke.*;
 public class CaesarCipher {
-
-    //This method returns a string that has been encrypted using the Caesar
-    // Cipher Algorithm explained in the videos
     public String encrypt(String input, int key) {
         StringBuilder encrypted=new StringBuilder(input);
         String alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -18,8 +15,7 @@ public class CaesarCipher {
         }
         return encrypted.toString();
     }
-    
-    // Modify the encrypt method to be able to handle both uppercase and lowercase letters
+   
     public String encrypt2(String input, int key) {
         StringBuilder encrypted=new StringBuilder(input);
         String alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -38,11 +34,7 @@ public class CaesarCipher {
         }
         return encrypted.toString();
     }
-    
-    //​This method returns a String that has been encrypted using the following algorithm. 
-    //Parameter key1​is used to encrypt every other character with the Caesar Cipher algorithm, 
-    //starting with the first character, and key2​is used to encrypt every other character, 
-    //starting with the second character. 
+   
     public String encryptTwoKeys(String input, int key1, int key2) {
         StringBuilder encrypted=new StringBuilder(input);
         String alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -64,7 +56,6 @@ public class CaesarCipher {
         return encrypted.toString();
     }
     
-    // test function
     public void testCaesar() {
         //FileResource fr=new FileResource();
         //String message=fr.asString();
